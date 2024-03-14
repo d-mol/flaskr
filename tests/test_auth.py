@@ -69,4 +69,4 @@ def test_logout(client, auth):
         assert "user_id" not in session
 
 def return_funny_number:
-    return 69
+    return 420
