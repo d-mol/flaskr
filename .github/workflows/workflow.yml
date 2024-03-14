@@ -1,5 +1,13 @@
 name: My First Workflow
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - flaskr/
+      - tests/
+    branches-ignore:
+      - 'release'
 jobs:
   first_job:
     runs-on: ubuntu-latest
